@@ -1,0 +1,12 @@
+
+
+
+
+<StackLayout backgroundColor="black" class="page">
+
+    <GridLayout>
+        <ImageSwipe [items]="items" imageUrlProperty="imageUrl" allowZoom="true" (tap)="tapped()" backgroundColor="#000000"
+                    [pageNumber]="pageNumber" (pageChanged)="pageChanged($event)" >
+        </ImageSwipe>
+    </GridLayout>
+</StackLayout>
